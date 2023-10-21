@@ -1,0 +1,79 @@
+/* 
+    1. Phân tích:  ok
+        1.header
+        2.slider
+        3.content
+            - about
+            - tour
+            - contact
+            - image
+        4.footer
+
+    2. Dựng base ...
+    3. Xây dựng theo từng thành phần
+    4. Hoàn thiện
+
+ */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth; /*hành vi khi cuộn*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-white
+{
+    color: #fff !important; 
+}
+
+.row
+{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col
+{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.third
+{
+    width: calc(100% /3);
+}
+.half
+{
+    width: 50%;
+}
+.full-width
+{
+    width: 100%;
+}
+.mt-8
+{
+    margin-top: 8px;
+}
+.mt-16
+{
+    margin-top: 16px;
+}
+.float-r
+{
+    float: right;
+}
+.row::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+.text-center
+{
+    text-align: center !important; 
+}
+

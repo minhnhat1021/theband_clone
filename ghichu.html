@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/reset.css">
+</head>
+<body>
+    <!-- THỰC CHIẾN THIẾT KẾ GIAO DIỆN WEB
+        1. Phân tích
+        2. Dựng bass
+        3. Xây dựng từng thành phần theo phân tích
+        4. Hoàn thiện
+
+        1. phân tích : 
+                - những thành phần thường xuất hiện trong web : 
+                    Header (đầu trang)
+                    navigation (điều hướng sang những trang khác của web), 
+                    breadcrumb (chỉ cho mình biết mình đang ở đâu trong 1 web)
+                    sidebar (1 thanh thường được đạt trong 1 phía của màn hình , trái hoặc phải, chứa nội dung gì đó (thường là nav phụ))
+                    slider (phần trình diễn , thường là hình ảnh )
+                    baner (ảnh quảng cáo)
+                    content (nội dung ở giữa trang web)
+                    footer (cuối trang) , ...v.v
+
+    -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- thẻ -->
+    <table> 
+        <thead> <!-- dòng đầu tiên -->
+            <th> <!-- tiêu đề của dòng đầu tiên  -->
+    
+            </th>
+            <th>
+    
+            </th>
+        </thead>
+        <tbody><!-- dòng tiếp theo của phần body  -->
+            <tr> <!-- thông tin của dòng -->
+                <td> <!-- thông tin tương ứng với th -->
+    
+                </td>
+                <td>
+    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- attibute : thuộc tính 
+        title: "đây là..."
+        text-decoration: line-through :  gạch ngang chữ;
+        text-decoration: underline :  gạch chân chữ;
+    -->
+
+    
+    <!-- ul: xếp theo dạng dấu ".",  ol: xếp theo dạng số thứ tự -->
+
+    <!-- 3 cách sử dụng css : 
+        internal: viết thẳng css vào bên html bằng thẻ <style>
+        external: link files css bên ngoài
+        inline: viết thẳng vào dòng bên html
+    -->
+    <!-- selector -->
+    <!-- <img src="./asset/img/selector.jpg" alt="haha"> -->
+
+    
+
+
+    <!-- thứ tự ưu tiên
+        inline : 1000  : style:"color: red;"
+        id : 100
+        class : 10
+        tag : 1 : h1, h2, ...
+        2 selector giống nhau : cái nào gọi sau cái đó dược ưu tiên 
+        nhiều selector hơn : được ưu tiên hơn
+        !important : đặc biệt ưu tiên :   color:red !important; mạnh hơn cả inline
+     -->
+    <!--
+        <br /> : xuống dòng
+      -->
+     
+    <!-- CSS variable
+
+        :root
+        {
+            --tenbien: thuoc tinh; 
+        }
+        h1{
+            --my-color: black;
+            color: var(--my-color);c1
+            color: var(--tenbien);c2
+        } 
+    -->
+
+    <!-- 
+        đơn vị 
+        % : tính theo % của vật chứa
+        rem : phụ thuộc vào thẻ html    
+        em: phụ thuộc vào thẻ cha gần nhất chứa thuộc tính đang sử dụng em.
+        vw: phần trăm kích thước của trình duyệt chiều ngang
+        vh: phần trăm kích thước của trình duyệt chiều dọc    
+    -->
+    <!-- 
+        hàm
+        calc(): cộng trừ nhân chia
+        attr(): lấy giá trị
+        {
+                a::after
+            {
+                content: "("attr(href) ")"; -> toi la ai
+            
+            }
+            <a href="toi la ai"></a>
+
+        }
+
+    -->
+    <!-- 
+        element: pseudo class
+        element:hover : kích hoạt khi di chuột lên;
+        element:active: kích hoạt khi bấm và giữ chuột;
+        element:first-child : lấy ra cái đầu tiên trong 1 tập hợp giống nhau vidu : li đầu tiên;
+        element:last-child : lấy ra cái cuối cùng trong 1 tập hợp giống nhau vidu : li đầu tiên
+    -->
+    <!-- 
+        phần tử giả : pseudo element
+element element::before : thêm element giả đứng đầu tiên trong element
+        {
+            content: "";
+            display: block;
+        }
+        element::after : thêm element giả đứng cuối cùng element       
+        {
+            content: "";
+            display: block;
+        }
+        element::first-letter : css cho ký tự đầu tiên
+        element::first-line: css cho dòng đầu tiên
+        element::selection : css khi bôi đen vào
+
+    -->
+
+    <!-- PADDING, BORDER, MARGIN, BOX-SIZING
+
+        padding: phần đệm thêm tính từ phần tử mà ta css
+        border(độ dày viền, kiểu border, màu sắc border): đường viền bao quanh phẩn tử mà ta css
+        margin: kéo element mà ta css đi một đoạn 
+        box-sizing: border-box;  chiều ngang của element = border + padding + content 
+
+    -->
+
+    <!-- 
+        BACKGROUND-IMAGE
+        shorthand background 
+        background: url(https://png.pngtree.com/png-vector/20230426/ourmid/pngtree-golden-star-icon-clipart-vector-png-image_6731283.png)no-repeat center / cover;
+
+        background-image:url(https://png.pngtree.com/png-vector/20230426/ourmid/pngtree-golden-star-icon-clipart-vector-png-image_6731283.png), url(data:image/jpeg;base64,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); */
+        background-image: linear-gradient(0, #333, #ccc);    đổ màu từ góc độ 0 , từ trắng sang đen 
+        background-size: 400px 400px; 
+        background-size: contain;  lấy kích thước chiều dài nhất của bức ảnh để hiển thị dựa trên 100% vật chứa , nhưng không bị cắn xén ảnh  
+        background-size: cover;  lấy kích thước chiều dài nhất của bức ảnh để hiển thị dựa trên 100% vật chứa , nhưng có bị cắt xén ảnh , không để lộ khoảng trắng  */
+        background-repeat: no-repeat ;
+        background-origin: padding-box, border-box, content-box; :  đổ ảnh bắt đầu từ padding, border , content
+        background-position: 10px; : cách trái 10px , center trên dưới || background-position: top 10px right 20px: cách trên phải 10, 20px
+     -->
+
+    <!-- 
+        POSITION (caniuse.com)
+
+        RELATIVE: vị trí tương đối , lấy chính vị trí nó đang đứng làm gốc
+        h1
+        {
+            position : relative
+            top: 100px;
+            right: 50px;
+        }
+
+        ABSOLUTE: vị trí phụ thuộc vào thẻ cha gần nhất có thuộc tính position
+        h2
+        {
+            position: absolute;
+        }
+
+        FIXED: vị trí phụ thuộc vào trình duyệt
+
+        STICKY
+        {
+            position: sticky
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+     -->
+    <!-- 
+        CÁC CÁCH CĂN GIỮA item
+        text-align: center;
+        line-height: 50px; căn giữa chiều dọc
+
+        display: flex;
+        align-items: center : căn dọc 
+        justify-content: space-between
+
+        position: relative
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+
+        h1::after
+        {
+            content: ""
+            position: absolute
+            left: 10px  
+            border-left: 3px solid #333
+            height: 10px
+            top: 50%
+            transform: translateY(-50%)
+        }
+
+    -->
+
+    <!-- 
+        HIỆN THỊ ẢNH DỰ PHÒNG KHI ẢNH CHÍNH LÔI
+
+        <img onerror="this.src='đường dẫn ảnh khác'" src="" alt="">
+        
+        background-image: url('ảnh đầu '), url('ảnh dự phòng');
+
+    -->
+
+    <!-- image resize online.com
+         unsplash.com (nguồn ảnh)
+         crop-image (cut hình ảnh)
+    ## TRANG WEB SỬ DỤNG ÍT HÌNH ẢNH ( TỐC ĐỘ TẢI TRANG KHÔNG BỊ ẢNH HƯỞNG NHIỀU BỞI HÌNH ẢNH)
+        TỐI ƯU SỬ DỤNG HÌNH ẢNH TRÊN TRANG WEB
+        1. Sử dụng định dạng ảnh phù hợp
+            - Hình học, vector : SVG
+            - Bitmap transparent: PNG, WEBD
+            - Bitmap không transparent: JPEG, WEBD
+        2. Nén ảnh (giảm dung lượng)
+            - tinypng.com
+        3. Sử dụng kích thước ảnh phù hợp
+            - Original: 4000px x 4000px, Figma: 800px x 800px (CSS), Resize: 1600px x 1600px (x2 lên),
+            đáp ứng tốt cho cả màn hình PPI/DPI cao (retina)
+            - PPI (pixer per inch), DPI (Dots per inch): 100 DPI, 300 DPI(300 nhiều điểm ảnh hơn 100) 
+
+        LOẠI MÀN HÌNH:
+            1. Màn hình thường (DPI thấp - 1:1): 800px x 800px 
+            2. Màn hình retina (DPI cao - 2:1): 1600px x 1600px  
+    ## TRANG WEB SỬ DỤNG NHIỀU HÌNH ẢNH
+        THIẾT BỊ:
+            1.Mobile: 1600px x 1600px ( tốn băng thông , chờ lâu hơn => giảm trải nhiệm )
+            2.Tablet: 1600px x 1600px
+            2.Desktop: 1600px x 1600px
+    ## BÀI TOÁN 1 ( ảnh cùng nội dung nhưng khác kích cỡ)
+        1. mobile: 50 x 50
+        2. tablet: 100 x 100
+        3. desktop: 200 x 200
+
+        <img 
+            srcset="
+                ./100x100.jpg 100w,
+                ./200x200.jpg 200w,
+                ./400x400.jpg 400w
+
+            "
+            sizes="(max-width: 575px) 100px, (max-width: 991px) 200px, 400px "
+            src="./400x400.jpg"
+            alt
+        
+        >
+    ## BÀI TOÁN 2 
+        desktop: 200 x 200
+        <img 
+            srcset="./200x200.jpg 1x, ./400x400.jpg 2x"  
+            src="./400x400.jpg" 
+        >
+    ## BÀI TOÁN 3 (2 ảnh khác nhau để phù hợp vào hoàn cảnh hiển thị trên những trình duyệt khác nhau , tập trung vào nội dung hình ảnh)
+        1. desktop: /img/ảnh-1.jpg
+        2. mobile: /img/ảnh-2.jpg  
+        
+        <picture>
+        <source media="max-width: 575px" srcset="./anhnho.jpg" >
+        <img 
+            src="./anhto.jpg" 
+            alt="">
+        </picture>
+
+     -->
+    
+
+    
+    
+
+
+</body>
+</html>
