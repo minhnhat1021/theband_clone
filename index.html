@@ -14,9 +14,9 @@
         <div id="header">
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#band" class="js-mobile-menu">Band</a></li>
-                <li><a href="#tour" class="js-mobile-menu">Tour</a></li>
-                <li><a href="#contact" class="js-mobile-menu">Contact</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">More
                     <i class="header-down">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down-filled"  width="10" height="10" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -62,17 +62,17 @@
                 <div class="section-heading">The band</div>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-content">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="member-list">
+                <div class="member-list row">
 
-                    <div class="col third text-center">
+                    <div class="col third text-center s-full mt-32">
                         <p class="member-name">Name</p>
                         <img src="./asset/img/bandmember.jpg" alt="Name">
                     </div>
-                    <div class="col third text-center">
+                    <div class="col third text-center s-full mt-32">
                         <p class="member-name">Name</p>
                         <img src="./asset/img/bandmember.jpg" alt="Name">
                     </div>
-                    <div class="col third text-center">
+                    <div class="col third text-center s-full mt-32">
                         <p class="member-name">Name</p>
                         <img src="./asset/img/bandmember.jpg" alt="Name">
                     </div>
@@ -88,31 +88,31 @@
                         <li>November <span class="quantity ">3</span></li>
                     </ul>
                     <div class="place-list row">
-                        <div class="third col">
+                        <div class="third col mt-16 s-full">
                             <img src="./asset/img/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-text">
                                 <h2 class="place-heading">New York</h2>
                                 <p class="place-sub-heading">Fri 27 Nov 2016</p>
                                 <p class="place-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="third col">
+                        <div class="third col mt-16 s-full">
                             <img src="./asset/img/paris.jpg" alt="" class="place-img">
                             <div class="place-text">
                                 <h2 class="place-heading">Paris</h2>
                                 <p class="place-sub-heading">Sat 28 Nov 2016</p>
                                 <p class="place-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="third col">
+                        <div class="third col mt-16 s-full">
                             <img src="./asset/img/san fran.jpg" alt="" class="place-img">
                             <div class="place-text">
                                 <h2 class="place-heading">San Francisco</h2>
                                 <p class="place-sub-heading">Sun 29 Nov 2016</p>
                                 <p class="place-about">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -124,25 +124,25 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
             <div class="row contact-content">
-                <div class="col half contact-info">
+                <div class="col half contact-info s-full">
                     <p class="text-contact">
                         <i></i>
                         Chicago, US</p>
                     <p class="text-contact">
                         <i></i>
-                        Phone: +00 151515</p>
+                        Phone: <a href="tel:+00 151515">+00 151515</a> </p>
                     <p class="text-contact">
                         <i></i>
-                        Email: mail@mail.com</p>
+                        Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                 </div>
-                <div class="col half contact-form">
+                <div class="col half contact-form s-full">
                     <form action="">
                         <div class="row">
-                            <div class="col half">
+                            <div class="col half s-full">
                                 <input type="text" required class="form-control" placeholder="Name">
                             </div>
-                            <div class="col half">
-                                <input type="email" required class="form-control" placeholder="Email">
+                            <div class="col half s-full">
+                                <input type="email" required class="form-control s-mt-8" placeholder="Email">
                             </div>
                         </div>
 
@@ -151,7 +151,7 @@
                                 <input type="text" required class="form-control" placeholder="Messages">
                             </div>
                         </div>
-                        <input type="submit" value="SEND" class="float-r btn mt-16 ">
+                        <input type="submit" value="SEND" class="float-r btn contact-submit mt-16 s-full">
                     </form>
                 </div>
             </div>
@@ -295,30 +295,56 @@
             event.stopPropagation()  //ngăn chặn hành vi nổi bọt
         })
 
-        
-        
-        
-
-        const mobileMenus = document.querySelectorAll('.js-mobile-menu')
+        const mobileMenu = document.querySelector('.js-mobile-menu')
         const header = document.getElementById('header')
         const headerHeight = header.clientHeight
 
-        for (const mobileMenu of mobileMenus)
-        {
-
-            mobileMenu.addEventListener('click', function(){
-            const isClose = header.clientHeight === headerHeight;
+        mobileMenu.addEventListener('click', function(){
+            const isClose = header.clientHeight === headerHeight
             if(isClose)
             {
                 header.style.height = 'auto';
             }
             else
             {
-                header.style.height = '50px';
+                header.style.height = null;
             }
-            })
-        
+        })
+
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i = 0; i < menuItems.length; i++)
+        {
+            var menuItem = menuItems[i]
+
+            // menuItem.addEventListener('click', function(event){
+            //     var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+            //     if(isParentMenu)
+            //     {
+            //         event.preventDefault();
+            //     }
+            //     else 
+            //     {
+            //         header.style.height = null;
+            //     } 
+
+            // })
+            menuItem.onclick = function(event){
+                var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu)
+                {
+                    event.preventDefault();
+                }
+                else 
+                {
+                    header.style.height = null;
+                } 
+
+            }
+         
         }
+
+        
+    
         
 
     </script>

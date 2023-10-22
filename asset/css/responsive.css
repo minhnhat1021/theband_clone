@@ -1,22 +1,116 @@
-@media (min-width: 1024px)
+@media (min-width: 64em)
     {
+        
+    }
+@media (max-width:63.9375em)
+{
+    #nav .subnav a
+    {
+        padding: 5px 12px;
+    }
+    .btn
+        {
+            padding: 16px 24px;
+        }
+        .contact-form .form-control
+        {
+            padding: 15px;
+        }
+    .contact-info
+    {
+        line-height: 2.0;
+    }
+    .contact-submit
+    {
+        font-size: 18px;
+    }
+    .modal-input
+    {
+        padding: 15px;
+    }
+    .footer-social
+    {
+        font-size: 48px;
+    }
+    #footer  a
+    {
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+}
+@media (min-width: 46.25em) and (max-width: 63.9375em)
+    {
+        
+    }
+
+@media (max-width: 46.1875em)
+    {
+        #header {
+            overflow: hidden;
+        }
         #header .mobile-menu
         {
-            display: none;
-        }
-    }
-    @media (min-width: 740px) and (max-width: 1023px)
-    {
-
-    }
-
-    @media (max-width: 739px)
-    {
-        #nav li {
             display: block;
         }
         #header .header-search 
         {
             display: none;
         }
+        #nav
+        {
+            display: block;
+        }
+        #nav .subnav
+        {
+            position: initial;
+            background-color: #000;
+        }
+        #nav .subnav a
+        {
+            color: #fff;
+            
+        }
+        #nav > li:first-child
+        {
+            display: inline-block;
+        }
+        #nav > li {
+            display: block;
+        }
+        #slider .text-content
+        {
+            display: none;
+        }
+        .mobile-member
+        {
+            width: 100%;
+            margin-top: 30px;
+        }
+        .mobile-member img 
+        {
+            width: 60%;
+        }
+        .container
+        {
+            position: absolute;
+            top: 7%;
+        }
+        .s-full
+        {
+            width: 100%;
+        }
+        .contact-form
+        {
+            margin-top: 32px;
+        }
+        .contact-form .form-control
+        {
+            outline: yellow;
+        }
+        .s-mt-8
+        {
+            margin-top: 8px;
+        }
+        
     }

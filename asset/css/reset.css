@@ -62,6 +62,10 @@ html
 {
     margin-top: 16px;
 }
+.mt-32
+{
+    margin-top: 32px;
+}
 .float-r
 {
     float: right;
