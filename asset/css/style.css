@@ -24,6 +24,8 @@
     left: 0;
     right: 0;
     z-index: 1;
+    max-width: 100%;
+    overflow: hidden;
     
 }
 
@@ -71,6 +73,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     list-style: none;
     background-color: #fff;
+    
 }
 
 #nav .subnav li
@@ -84,7 +87,7 @@
     padding: 0 18px;
     color: #000;
 }
-
+#header .mobile-menu,
 #header .header-search 
 {
     float: right;
@@ -92,6 +95,10 @@
     padding: 0 21px;
     line-height: 50px;   
     color: #fff;
+}
+#header .mobile-menu:hover 
+{
+    background-color: #494848;
 }
 #header .header-search:hover
 {
@@ -108,8 +115,9 @@
 {
     position: relative;
     margin-top: 50px;
-    padding-top: 50%; /* 50% của chiều ngang trình duyệt */
+    padding-top: 50%; 
     background: url(/asset/img/chicago.jpg)top center /cover no-repeat;
+    
 }
 #slider .text-content
 {
@@ -148,8 +156,9 @@
 #content .content-section
 {
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 64px 0;
+    padding: 64px 16px;
 }
 #content .section-heading
 {
